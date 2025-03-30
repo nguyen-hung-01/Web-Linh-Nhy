@@ -734,6 +734,16 @@
   .img-posts img {
     height: 250px;
   }
+  .buy-now-link button {
+    width: 75px;
+  }
+  .buy-now-btn button {
+    width: 170px;
+    font-size: 15px;
+  }
+  .buy-now-link {
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
 }
