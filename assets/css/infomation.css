@@ -1,0 +1,129 @@
+.outstanding {
+  padding: 70px 0;
+}
+.swiperInfo {
+  width: 100%;
+}
+.outstanding-left img {
+  width: 484px;
+  height: 350px;
+  object-fit: cover;
+}
+.outstanding-left .info-title {
+  color: var(--green-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+.outstanding-left .date {
+  color: var(--green-color);
+  font-weight: 300;
+  font-size: 21px;
+  margin-top: 10px;
+}
+.outstanding-item {
+  width: 100%;
+  display: flex !important;
+}
+.description {
+  color: var(--text-gray);
+  font-size: 17px;
+  line-height: 1.5;
+}
+.outstanding-second-item {
+  position: relative;
+  width: 250px;
+  height: 170px;
+}
+.outstanding-second-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.outstanding-second-item .over-lay {
+  position: absolute;
+  left: 15px;
+  bottom: 30px;
+  color: #fff;
+}
+.outstanding-second-item .over-lay h5 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.outstanding-second-item .over-lay p {
+  font-size: 21px;
+  font-weight: 300;
+}
+.swiper-pagination-bullet {
+  width: 50px !important;
+  height: 5px !important;
+  border-radius: 2px !important;
+  background: #878787 !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--green-color) !important;
+}
+.hot-category h3 {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+}
+.hot-category h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 120%;
+  background-color: var(--green-color);
+}
+.news-card {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  /* border: 1px solid #b6b6b6; */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 25px;
+}
+.news-card .img {
+  width: 160px;
+  height: 160px;
+}
+.news-card img {
+  height: 100%;
+  object-fit: cover;
+}
+.hot-category-list {
+  row-gap: 25px;
+  padding: 50px 0;
+}
+.see-more-link a {
+  padding: 12px 15px;
+  background-color: #c1cfa1;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #333;
+}
+.news-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-card .info .desc {
+  flex: 1;
+  margin-top: 10px;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+.news-card .info .name {
+  color: var(--green-color);
+  font-size: 23px;
+  font-weight: 600;
+}

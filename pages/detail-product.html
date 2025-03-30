@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/detail-product.css" />
+    <link rel="stylesheet" href="/assets/css/reponsive.css" />
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swipper Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="container">
+      <div class="main-product flex-row gap-40">
+        <div class="main-product-left">
+          <div class="main-product-img">
+            <img src="../assets/images/Image.png" alt="product" />
+          </div>
+        </div>
+        <div class="main-product-right flex-column gap-30">
+          <div class="name">Sản phẩm</div>
+          <div class="tags-price">
+            <div class="tags">
+              <p>Tag</p>
+            </div>
+            <div class="price">
+              <sup>$</sup>
+              <span>50</span>
+            </div>
+          </div>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            ratione quo explicabo amet consectetur minus dolorem maxime natus
+            inventore reiciendis mollitia quae eaque earum odio!
+          </p>
+          <div class="fields flex-row gap-30">
+            <div class="fields-item">
+              <label for="size">Size</label>
+              <select name="size" id="size">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+            <div class="fields-item">
+              <label for="num">Số lượng</label>
+              <select name="num" id="num">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+          </div>
+          <div class="buy-now flex-row flex-space-between align-center">
+            <div class="buy-now-btn">
+              <button>Mua ngay</button>
+            </div>
+            <div class="buy-now-link flex-row align-center gap-20">
+              <button>
+                <img src="../assets/images/zalo.png" alt="zalo" />
+              </button>
+              <button>
+                <img src="../assets/images/cart.png" alt="cart" />
+              </button>
+            </div>
+          </div>
+          <div class="instruction">
+            <select name="instructions" id="instructions">
+              <option value="1">Hướng dẫn sử dụng</option>
+              <option value="2">Cách bảo quản</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="product-relate">
+        <div class="product-relate-title">
+          <h3>Sản phẩm tương tự</h3>
+          <p>Subheading</p>
+        </div>
+        <div class="product-relate-list grid-3">
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-relate-card">
+            <div class="img">
+              <img src="../assets/images/Image.png" alt="product" />
+            </div>
+            <div
+              class="product-relate-card-body flex-column flex-space-between"
+            >
+              <div>
+                <h6>Sản phẩm</h6>
+                <p class="desc">Phụ đề</p>
+              </div>
+              <div>
+                <p class="price">Giá:...</p>
+              </div>
+              <div class="flex-row align-center gap-20">
+                <button>Mua ngay</button>
+                <button>
+                  <img src="../assets/images/cart.png" alt="cart" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <div id="chatAi"></div>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Swipper Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main.js -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/product.css" />
+    <link rel="stylesheet" href="/assets/css/reponsive.css" />
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swipper Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="main-products">
+      <div class="bg-product"></div>
+      <div class="container flex-row">
+        <div class="slide-bar">
+          <div class="menu-filter flex-column gap-30">
+            <div class="close-slide-bar">
+              <span>x</span>
+            </div>
+            <div class="tags">
+              <h4 class="slibar-key">Keywords</h4>
+              <div class="list-tags">
+                <div class="tag-item">
+                  <span>Đồ ăn</span>
+                  <span>&#x2715;</span>
+                </div>
+                <div class="tag-item">
+                  <span>Tâm linh</span>
+                  <span>&#x2715;</span>
+                </div>
+                <div class="tag-item">
+                  <span>Lành mạnh</span>
+                  <span>&#x2715;</span>
+                </div>
+              </div>
+            </div>
+            <div class="categories flex-column gap-20">
+              <div class="cate-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div>
+                  <h6>Thuần chay</h6>
+                  <p>Description</p>
+                </div>
+              </div>
+              <div class="cate-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div>
+                  <h6>Có thịt</h6>
+                  <p>Description</p>
+                </div>
+              </div>
+              <div class="cate-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <div>
+                  <h6>Có trứng sữa</h6>
+                  <p>Description</p>
+                </div>
+              </div>
+            </div>
+            <div class="price flex-column gap-15">
+              <div class="flex-row flex-space-between align-center">
+                <h6 class="slibar-key">Giá thành</h6>
+                <p>0-5.000.000đ</p>
+              </div>
+              <div class="bar"></div>
+            </div>
+            <div class="volumn">
+              <h4 class="slibar-key">Khối lượng</h4>
+              <div class="flex-column gap-20">
+                <div class="cate-item">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div>
+                    <h6>1kg</h6>
+                  </div>
+                </div>
+                <div class="cate-item">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div>
+                    <h6>5kg</h6>
+                  </div>
+                </div>
+                <div class="cate-item">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div>
+                    <h6>10kg</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="confirm flex-row flex-center">
+              <button>Xác nhận</button>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-top flex-row flex-space-between">
+            <div class="search">
+              <input type="text" placeholder="Tìm kiếm sản phẩm" />
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_556_524)">
+                  <path
+                    d="M14.9515 14.32L12.0281 11.42M13.6074 7.65334C13.6074 10.5989 11.2004 12.9867 8.23108 12.9867C5.26181 12.9867 2.85474 10.5989 2.85474 7.65334C2.85474 4.70782 5.26181 2.32001 8.23108 2.32001C11.2004 2.32001 13.6074 4.70782 13.6074 7.65334Z"
+                    stroke="#F3F3F3"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_556_524">
+                    <rect
+                      width="16.129"
+                      height="16"
+                      fill="white"
+                      transform="translate(0.838623 0.320007)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="sort flex-row align-center gap-15">
+              <div class="sort-item active">
+                <span>Mới</span>
+              </div>
+              <div class="sort-item">
+                <span>Giá từ thấp đến cao</span>
+              </div>
+              <div class="sort-item">
+                <span>Giá từ cao đến thấp</span>
+              </div>
+              <div class="sort-item">
+                <span>Đánh giá</span>
+              </div>
+            </div>
+          </div>
+          <div class="filter-icon">
+            <div class="filter-img open-slide-bar">
+              <img src="../assets/images/filter-icon.png" alt="filter" />
+            </div>
+            <span>Bộ lọc</span>
+          </div>
+          <div class="product-list grid-4 gap-25">
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 1
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 2
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 3
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 4
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 5
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 6
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 7
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 8
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 1
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 2
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 3
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 4
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 5
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 6
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 7
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="./detail-product.html" class="product-img">
+                <img src="../assets/images/Image.png" alt="product" />
+              </a>
+              <div class="product-body">
+                <a href="./detail-product.html" class="product-name">
+                  Sản phẩm 8
+                </a>
+                <p>$0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <div id="chatAi"></div>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Swipper Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main.js -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

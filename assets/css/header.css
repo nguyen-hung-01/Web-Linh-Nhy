@@ -1,0 +1,116 @@
+/* ======================= Header Style ======================*/
+header {
+  padding: 50px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+
+  z-index: 10;
+}
+.header-page {
+  position: relative;
+  padding: 6px !important;
+  margin-top: 54px;
+  background-color: var(--green-color) !important;
+  color: #fff !important;
+}
+.sticky {
+  position: fixed;
+  padding: 6px !important;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+  color: #fff !important;
+  background-color: var(--green-color) !important;
+  animation: smoothScroll 1s forwards;
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-142px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.sticky input {
+  display: none;
+}
+.header-page input {
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+.header-page .search .search-icon svg path {
+  stroke: var(--green-color);
+}
+.header-page.sticky .search .search-icon svg path {
+  stroke: #fff;
+}
+header a {
+  padding: 5px 0;
+  margin: 5px 0;
+  position: relative;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+header a::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s;
+  border-radius: 5px;
+}
+header a.active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s;
+  border-radius: 5px;
+}
+header a:hover::before {
+  width: 100%;
+}
+header .search {
+  position: relative;
+}
+header .search input {
+  width: 300px;
+  height: 32px;
+  background-color: var(--green-color);
+  opacity: 0.8;
+  border: none;
+  padding: 5px 15px;
+  padding-left: 35px;
+  border-radius: 20px;
+}
+header .search .search-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+nav li .icon {
+  width: 20px;
+  height: 20px;
+}
+nav img,
+.open-navigation,
+.header-logo,
+.close-navigation {
+  display: none;
+  cursor: pointer;
+}

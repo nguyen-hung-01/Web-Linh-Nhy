@@ -1,0 +1,66 @@
+.main-about {
+  background-color: var(--cream-color);
+}
+.about-top {
+  padding: 30px 0;
+}
+.main-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-title h1 {
+  font-weight: 700;
+  font-size: 75px;
+}
+.main-title p {
+  color: var(--text-gray);
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.about-bg {
+  background-image: url("../images/about.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+  width: 100%;
+}
+.about-content {
+  padding: 50px 0;
+}
+.about-content p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-content p a {
+  text-decoration: underline;
+}
+.category-title {
+  color: var(--green-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.category-list {
+  padding: 20px 0;
+}
+.category-item {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+}
+.category-name {
+  color: var(--green-color);
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.category-content p {
+  color: var(--text-gray);
+  font-size: 15px;
+  line-height: 1.5;
+}
