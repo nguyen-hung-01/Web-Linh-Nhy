@@ -100,15 +100,28 @@ document.addEventListener("DOMContentLoaded", async function () {
   const btnToggleModalAbout = document.getElementById("about-dropdown");
   const btnToggleModalProduct = document.getElementById("product-dropdown");
 
-  btnToggleModalAbout.addEventListener("click", () => {
+  btnToggleModalAbout.addEventListener("click", (e) => {
+    e.preventDefault();
     document
       .querySelector(".about-modal")
       .classList.toggle("open-menu-dropdown");
+    document.querySelectorAll(".about-modal div").forEach((item) => {
+      item.addEventListener("click", () => {
+        window.location = "../../pages/about.html";
+      });
+    });
   });
-  btnToggleModalProduct.addEventListener("click", () => {
+  btnToggleModalProduct.addEventListener("click", (e) => {
+    e.preventDefault();
     document
       .querySelector(".product-modal")
       .classList.toggle("open-menu-dropdown");
+    document.querySelectorAll(".product-modal div").forEach((item) => {
+      item.addEventListener("click", () => {
+        console.log(item);
+        window.location = "../../pages/about.html";
+      });
+    });
   });
 
   // Toggle slide bar ===========================================================================
