@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     document.querySelectorAll(".product-modal div").forEach((item) => {
       item.addEventListener("click", () => {
         console.log(item);
-        window.location = "../../pages/about.html";
+        window.location = "../../pages/products.html";
       });
     });
   });
