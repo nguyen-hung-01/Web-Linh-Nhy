@@ -1,18 +1,4 @@
-// Function to load HTML file to specified location =======================================
-async function loadComponent(selector, file) {
-  try {
-    const response = await fetch(file);
-    const data = await response.text();
-    document.querySelector(selector).innerHTML = data;
-  } catch (error) {
-    console.error(`Lỗi khi tải ${file}:`, error);
-  }
-}
-
-// Relative path `partial/` ===============================================================
-let pathPrefix = window.location.pathname.includes("/pages/") ? "../" : "";
-
-// Load Header, Footer, Chat AI ===========================================================
+// Load Header, Footer, Chat AI ==========================================================
 document.addEventListener("DOMContentLoaded", async function () {
   await loadComponent("#header", pathPrefix + "partial/header.html");
   await loadComponent("#footer", pathPrefix + "partial/footer.html");
@@ -96,21 +82,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   });
 
-  // Menu Dropdown ==============================================================================
-  const btnToggleModalAbout = document.getElementById("about-dropdown");
-  const btnToggleModalProduct = document.getElementById("product-dropdown");
-
-  btnToggleModalAbout.addEventListener("click", () => {
-    document
-      .querySelector(".about-modal")
-      .classList.toggle("open-menu-dropdown");
-  });
-  btnToggleModalProduct.addEventListener("click", () => {
-    document
-      .querySelector(".product-modal")
-      .classList.toggle("open-menu-dropdown");
-  });
-
   // Toggle slide bar ===========================================================================
   const btnOpenSlideBar = document.querySelector(".open-slide-bar");
   const btnCloseSlideBar = document.querySelector(".close-slide-bar");
@@ -161,7 +132,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       },
     },
   });
-  // Page Information
+
   const swiperInfo = new Swiper(".swiperInfo", {
     direction: "horizontal",
     loop: true,
